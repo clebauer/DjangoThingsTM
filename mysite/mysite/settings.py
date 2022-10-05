@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%(b&rc3d(jds4b)#o6rkgs90$uh8%6ztw7v-@imxpg*0#uz0-m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ec2-18-215-177-46.compute-1.amazonaws.com']
 
 
 # Application definition
@@ -76,8 +76,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'database-1',
-        'USERNAME': 'root',
+        'NAME': 'djangodb',
+        'USER': 'root',
         'PASSWORD': 'rootpass123',
         'HOST': 'database-1.c7j8zetfuqck.us-east-1.rds.amazonaws.com',
         'PORT': 3306
